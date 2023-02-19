@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="inde.css">
+  <script src="inde.js" defer></script>
+  <script src="https://kit.fontawesome.com/0292fa98fe.js" crossorigin="anonymous"></script>
+  <title>Todo Avançado</title>
+</head>
+<body>
+    <div class="todo-container">
+      <header>
+        <h1>Todo JS</h1>
+      </header>
+
+      <form id="todo-form">
+        <p>Adicionar tarefa:</p>
+        <div class="form-control">
+          <input type="text" id="todo-input" placeholder="O que vocÊ vai fazer?">
+          <button type="submit">
+            <i class="fa-thin fa-plus"></i>
+          </button>
+        </div>
+      </form>
+
+        <form id="edit-form">
+          <p>Edite a sua Tarefa:</p>
+          <div class="form-control">
+            <input type="text" id="edit-input" placeholder="Editar">
+            <button type="Submit">
+              <i class="fa-solid fa-check-double"></i>
+            </button>
+          </div>
+        </form>
+
+        <div class="toolbar">
+          
+           <div id="search">
+            <h4>Pesquisar:</h4>
+              <form>
+                <input type="text" id="search-input" placeholder="Buscar">
+                <button id="search-button">
+                  <i class="fa-solid fa-delete-left"></i>
+                </button>
+              </form>
+           </div>
+
+             <div id="filter">
+              <h4>Filrar:</h4>
+              <select id="filter-select">
+                <option value="all"></option>
+                <option value="done"></option>
+                <option value="to-do"></option>
+              </select>
+             </div>
+
+        </div>
+
+        <div id="todo-list">
+          <div class="todo">
+           <h4>estou fazendo alguma coisa...</h4> 
+           <button class="finish-todo">
+            <i class="fa-solid fa-pen"></i>
+            <button class="remove-todo">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+           </button>
+          </div>
+          <div class="todo">
+            <h4>estou fazendo alguma coisa...</h4> 
+            <button class="finish-todo">
+             <i class="fa-solid fa-pen"></i>
+             <button class="remove-todo">
+               <i class="fa-solid fa-xmark"></i>
+             </button>
+            </button>
+           </div>
+        </div>
+     
+    </div>
+  </body>
+</html>
